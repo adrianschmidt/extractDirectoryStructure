@@ -42,7 +42,13 @@ function createDirectoryStructureYaml(dir, outputFile) {
     console.log(`Directory structure saved to ${outputFile}`);
 }
 
-// Usage example
-const rootDirectory = '../lime-elements';
+// Get the root directory from command-line arguments
+const rootDirectory = process.argv[2];
+
+if (!rootDirectory) {
+    console.error('Please provide the root directory as a command-line argument.');
+    process.exit(1);
+}
+
 const outputFile = 'directory_structure.yaml';
 createDirectoryStructureYaml(rootDirectory, outputFile);
