@@ -10,7 +10,7 @@ function traverseDirectory(dir, ignoreFilter, result = {}) {
         const filePath = path.join(dir, file);
         const relativePath = path.relative(process.cwd(), filePath);
 
-        if (ignoreFilter.ignores(relativePath)) {
+        if (ignoreFilter.ignores(relativePath) || file === '.git') {
             return;
         }
 
