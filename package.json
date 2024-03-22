@@ -3,13 +3,21 @@
   "version": "0.0.0-dev",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Adrian Schmidt <adrian@stealmycode.se>",
   "license": "MIT",
   "dependencies": {
     "ignore": "^5.3.1",
     "js-yaml": "^4.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianschmidt/extractDirectoryStructure.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/adrianschmidt/extractDirectoryStructure/issues"
+  },
+  "homepage": "https://github.com/adrianschmidt/extractDirectoryStructure#readme"
 }
